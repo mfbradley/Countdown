@@ -1,9 +1,7 @@
-
-updateTime();
 function updateTime() {
     var a = moment(new Date());
     var b = moment('2018, 06, 21').toObject();
-    var duration = moment.duration(a.diff(b))
+    var duration = moment.duration(-a.diff(b))
 
     var days = duration._data.days;
     var hours = duration._data.hours;
@@ -12,7 +10,7 @@ function updateTime() {
     var milliseconds = duration._data.milliseconds;
 
     var msConverted = moment(milliseconds).format('SS')
-    var html = days + ': ' + hours + ': ' + minutes + ': ' + seconds + ': ' + msConverted
+    var html = days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds ' + msConverted + ' milliseconds '
 
     $("#time").text(html);
 }
@@ -20,3 +18,5 @@ function updateTime() {
 setInterval(function () {
     updateTime();
 }, 10);
+
+updateTime();
