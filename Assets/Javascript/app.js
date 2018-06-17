@@ -1,7 +1,22 @@
-var now = moment();
 
-console.log(now);
-var b = moment([2007, 0, 29]);
-var time = a.to(b) // "in a day"
+updateTime();
+function updateTime() {
+    var a = moment(new Date());
+    var b = moment('2018, 06, 21').toObject();
+    var duration = moment.duration(a.diff(b))
 
-$("#time").text(time);
+    var days = duration._data.days;
+    var hours = duration._data.hours;
+    var minutes = duration._data.minutes;
+    var seconds = duration._data.seconds;
+    var milliseconds = duration._data.milliseconds;
+
+    var msConverted = moment(milliseconds).format('SS')
+    var html = days + ': ' + hours + ': ' + minutes + ': ' + seconds + ': ' + msConverted
+
+    $("#time").text(html);
+}
+
+setInterval(function () {
+    updateTime();
+}, 10);
