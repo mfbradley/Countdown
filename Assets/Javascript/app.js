@@ -18,10 +18,14 @@ $(document).ready(function() {
 
         $("#time").text(html);
         // $("#milliseconds").text(ms);
+
+        if (err) {
+            alert(err);
+        }
     }
 
     updateTime();
-    
+
     setInterval(function () {
         updateTime();
     }, 10);
