@@ -20,11 +20,13 @@ $(document).ready(function() {
         // $("#milliseconds").text(ms);
     }
 
+    updateTime();
+    
     setInterval(function () {
         updateTime();
     }, 10);
 
-    updateTime();
+    
 
     $(".btn").click(function () {
         alert("clicked!");
