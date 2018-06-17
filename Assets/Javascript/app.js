@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     function updateTime() {
-        var a = moment(new Date());
+        var a = moment();
         var b = moment('2018, 06, 21').toObject();
         var duration = moment.duration(-a.diff(b))
 
@@ -17,11 +17,7 @@ $(document).ready(function() {
         var html = days + ' d ' + hours + ' h ' + minutes + ' m ' + seconds + ' s ' + msConverted + ' ms'
 
         $("#time").text(html);
-        // $("#milliseconds").text(ms);
-
-        if (err) {
-            alert(err);
-        }
+        
     }
 
     updateTime();
