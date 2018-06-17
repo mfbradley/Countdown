@@ -19,8 +19,14 @@ body {
 .heading {
     font-size: 60px;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 420px) {
     .heading {
         font-size: 40px;
+    }
+
+    .jumbotron {
+        margin-top: 20%;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
