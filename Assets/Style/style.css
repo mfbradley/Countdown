@@ -2,13 +2,15 @@
     text-align: center;
     opacity: .7;
     margin-top: 10%;
-    /* font-family: 'Satisfy', cursive; */
     font-family: 'Oxygen', cursive;
 }
 
+.container {
+    height: 95vh
+}
 body {
     background-image: url("../Images/bkg.jpg");
-    height: auto;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
