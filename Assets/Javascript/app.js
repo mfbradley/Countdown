@@ -15,7 +15,6 @@ $(document).ready(function() {
         var html = days + ' d ' + hours + ' h ' + minutes + ' m ' + seconds + ' s ' + msConverted + ' ms'
 
         $("#time").text(html);
-        
     }
 
     updateTime();
@@ -24,8 +23,15 @@ $(document).ready(function() {
         updateTime();
     }, 10);
 
-    $(".btn").click(function () {
-        alert("clicked!");
+   
+
+    var imagesArray = ['Assets/Images/n.jpg', 'Assets/Images/nj.jpg', 'Assets/Images/nr.jpg', 'Assets/Images/njl.jpg']
+
+    $('.picsBtn').click(function() {
+        var random = Math.floor(Math.random() * imagesArray.length);
+        console.log(random);
+        $('body').css('background-image', "url('" + imagesArray[random] + "')");
     })
+
 
 });

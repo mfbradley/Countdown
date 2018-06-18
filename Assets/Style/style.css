@@ -21,6 +21,9 @@ p {
 .heading {
     font-size: 60px;
 }
+
+
+
 @media screen and (max-width: 420px) {
     .heading {
         font-size: 40px;
