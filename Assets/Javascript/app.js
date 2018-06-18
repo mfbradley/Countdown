@@ -23,9 +23,7 @@ $(document).ready(function() {
         updateTime();
     }, 10);
 
-   
-
-    var imagesArray = ['Assets/Images/n.jpg', 'Assets/Images/nj.jpg', 'Assets/Images/nr.jpg', 'Assets/Images/njl.jpg']
+    var imagesArray = ['Assets/Images/nic1.jpg', 'Assets/Images/nic2.jpg', 'Assets/Images/nic3.jpg', 'Assets/Images/nic4.jpg', 'Assets/Images/nic5.jpg', 'Assets/Images/nic6.jpg', 'Assets/Images/nic7.jpg', 'Assets/Images/nic8.jpg', 'Assets/Images/nic9.jpg', 'Assets/Images/nic10.jpg', 'Assets/Images/nic11.jpg', 'Assets/Images/nic12.jpg', 'Assets/Images/nic13.jpg', 'Assets/Images/nic14.jpg', 'Assets/Images/nic15.jpg', 'Assets/Images/nic16.jpg', 'Assets/Images/nic17.jpg', 'Assets/Images/nic18.jpg', 'Assets/Images/nic19.jpg', 'Assets/Images/nic20.jpg', 'Assets/Images/nic21.jpg', 'Assets/Images/nic22.jpg', 'Asseets/Images/bkg.jpg']
 
     $('.picsBtn').click(function() {
         var random = Math.floor(Math.random() * imagesArray.length);
