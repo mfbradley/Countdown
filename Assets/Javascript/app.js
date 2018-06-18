@@ -1,14 +1,10 @@
 $(document).ready(function() {
 
     function updateTime() {
-        var a = moment(new Date());
-     
-        var b = moment('2018, 06, 21').toObject();
-        console.log(a)
-        console.log(b)
+        var a = moment().utc();
+        var b = moment('2018-06-21').utc();
         var duration = moment.duration(-a.diff(b));
-        console.log(duration);
-
+        
         var days = duration._data.days;
         var hours = duration._data.hours;
         var minutes = duration._data.minutes;
@@ -27,8 +23,6 @@ $(document).ready(function() {
     setInterval(function () {
         updateTime();
     }, 10);
-
-    
 
     $(".btn").click(function () {
         alert("clicked!");
