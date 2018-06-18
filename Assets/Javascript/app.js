@@ -1,11 +1,13 @@
 $(document).ready(function() {
 
     function updateTime() {
-        var a = moment();
+        var a = moment(new Date());
+     
         var b = moment('2018, 06, 21').toObject();
-        var duration = moment.duration(-a.diff(b))
-
-        console.log(duration)
+        console.log(a)
+        console.log(b)
+        var duration = moment.duration(-a.diff(b));
+        console.log(duration);
 
         var days = duration._data.days;
         var hours = duration._data.hours;

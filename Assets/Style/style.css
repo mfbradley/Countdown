@@ -15,7 +15,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+p {
+    font-size: 25px;
+}
 .heading {
     font-size: 60px;
 }
